@@ -1,4 +1,3 @@
-setTimeout(() => {
     const form = document.querySelector('#form-habits');
     const nlwSetup = new NLWSetup(form);
     const button = document.querySelector('header button');
@@ -26,4 +25,3 @@ setTimeout(() => {
     const data = localStorage.getItem('NLWSetup@habits');
     nlwSetup.setData(JSON.parse(data) || {});
     nlwSetup.load();
-}, 50);
